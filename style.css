@@ -6,8 +6,8 @@
 
 span {
     font-family:sans-serif;
-    font-size:30px; 
-    line-height: 40px;
+    font-size:40px; 
+    line-height: 50px;
     color:white;
 
 }
@@ -37,7 +37,7 @@ a{
 }
 
 #bod {
-    padding: 0 20px 0 20px;
-    background: linear-gradient(lightgrey, #f8f8f8);
+    padding: 10px 20px 0 20px;
+    background: linear-gradient(#8d8d8d, #f8f8f8);
 
 }
