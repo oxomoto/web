@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #bid{
     position: absolute;
         left: 50%;
         top: 0%;
         transform: translate(-50%, 0%);
-       background-color: red;
 }
 
 span {
@@ -16,8 +16,8 @@ span {
     font-size:40px; 
     line-height: 50px;
     color:white;
-
 }
+
 #button {
     width:260px;
     background: lightgrey;
@@ -27,8 +27,8 @@ span {
     text-align: center ;
     line-height: 100px;
     font-size:50px;
-   
-}
+   }
+
 .cent{
  position: absolute;
         left: 50%;
@@ -37,8 +37,7 @@ span {
     }
 
 a{
-
-    color:white;
+color:white;
     text-decoration: none;
     font-family: sans-serif;
 }
@@ -46,17 +45,11 @@ a{
 #bod {
     padding: 10px 20px 0 20px;
     background: linear-gradient(#8d8d8d, #f8f8f8);
-
-}
-.dis{
-        
-
 }
 
 .imag {
 display: block;
- 
-    font-family:sans-serif;
+ font-family:sans-serif;
     font-size:20px; 
     color:white;
     background-color: lightgray;
@@ -66,7 +59,6 @@ display: block;
     margin: 20px;
     padding:20px;
 line-height: 30px;
-
-    }
+}
 
 
