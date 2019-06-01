@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>endless</title>
+        <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
+	<script type="text/javascript" src="js/manual-trigger.js"></script>
+    </head>
+
+    <body>
+
+<div id="content">
+	<span class="imag">Image may contain: indoor</span>
+	<span class="imag">Image may contain: No photo description available.</span>
+	<span class="imag">Image may contain: 1 person</span>
+	<span class="imag">Image may contain: closeup</span>
+	<span class="imag">Image may contain: outdoor,water</span>
+</div>
+	<a id="next" href="index.html">next page?</a>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#content').infinitescroll({
+		navSelector: "#next:last",
+		nextSelector: "#next:last",
+		itemSelector: "#content",
+		debug: false,
+		dataType: 'html',
+    maxPage: 100,
+		path: function(index) {
+			return "index"+".html";
+		}
+		// appendCallback	: false, // USE FOR PREPENDING
+    }, function(newElements, data, url){
+      // used for prepending data
+    	// $(newElements).css('background-color','#ffef00');
+    	// $(this).prepend(newElements);
+    });
+});
+    
+    
+        </script>
+
+    </body>
+</html>
