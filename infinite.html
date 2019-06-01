@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about</title>
+        <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
+	<script type="text/javascript" src="js/manual-trigger.js"></script>
+    </head>
+
+    <body id="bod">
+
+
+	<span id="content">
+  Scrolling, swiping. Oversharing to feel present. Mindlessly scrolling down. Trying to get to the bottom of the pit. What am I looking for? Validation? Scrolling more. Trying to find the missing piece? A purpose? Liking, scrolling, liking.Why aren't they liking back? Aren't they connected? Am I doing this to feel acknowledged? The thumb moves in seamless motion. Aimlessly. Deeper in the void. Flashing lights. Pixels flying past. Sun? Skin? Clothes? Engulfed. Taken by the endless flow of content. Searching. Projecting my body through cyberspace. Can you project yourself if it's infinite? New content, more content. Notifications. Drowning in a sea of data. Still connected. Yet no one in reach. Desperately showing facets. Fishing for attention. Attention. Likes. Not enough. Never enough. Economy of likes. Switching apps. Losing concentration. Still swiping. Mind and body disconnecting. The screen is like an extension of my body. Merging. Finally letting go. 2 seconds. Incredibly long seconds. Coming back. What have I missed? 3 new posts. 5 new stories. Comparing myself. So fast. Too fast. Not surfing anymore. But drowning in that wave. I haven't posted in 2 days. Am I still alive? What have I done that's worth sharing? It's not real, if it's not on the net. Wait! When did this become a thing? Drifting further away. A shadow of my former self. Merging more. Becoming transparent. Mind's racing.</span>
+
+	<a id="next" href="infinite.html">next page?</a>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#content').infinitescroll({
+		navSelector: "#next:last",
+		nextSelector: "#next:last",
+		itemSelector: "#content",
+		debug: false,
+		dataType: 'html',
+    maxPage: 100,
+		path: function(index) {
+			return "infinite"+".html";
+		}
+		// appendCallback	: false, // USE FOR PREPENDING
+    }, function(newElements, data, url){
+      // used for prepending data
+    	// $(newElements).css('background-color','#ffef00');
+    	// $(this).prepend(newElements);
+    });
+});
+</script>
+
+    </body>
+</html>

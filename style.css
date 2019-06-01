@@ -7,11 +7,37 @@
 span {
     font-family:sans-serif;
     font-size:30px; 
+    line-height: 40px;
     color:white;
+
+}
+#button {
+    width:260px;
+    background: lightgrey;
+    color:white;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center ;
+    line-height: 100px;
+    font-size:50px;
    
 }
-body {
-     padding: 0 20px 0 20px;
-  background: linear-gradient(black, white);
-  
+.cent{
+ position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+a{
+
+    color:white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#bod {
+    padding: 0 20px 0 20px;
+    background: linear-gradient(lightgrey, #f8f8f8);
+
 }
