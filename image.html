@@ -13,14 +13,17 @@
 
     <body>
 
-<div id="content">
+<div id="content" class="dis">
+    
+<div>
 	<span class="imag">Image may contain: indoor</span>
 	<span class="imag">Image may contain: No photo description available.</span>
 	<span class="imag">Image may contain: 1 person</span>
 	<span class="imag">Image may contain: closeup</span>
 	<span class="imag">Image may contain: outdoor,water</span>
+    </div>
 </div>
-	<a id="next" href="index.html">next page?</a>
+	<a id="next" href="image.html">next page?</a>
 
 
 <script type="text/javascript">
@@ -33,7 +36,7 @@ $(document).ready(function(){
 		dataType: 'html',
     maxPage: 100,
 		path: function(index) {
-			return "index"+".html";
+			return "image"+".html";
 		}
 		// appendCallback	: false, // USE FOR PREPENDING
     }, function(newElements, data, url){
