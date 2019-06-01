@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-   
+#bid{
+    position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, 0%);
 }
 
 span {
@@ -45,10 +48,7 @@ a{
 
 }
 .dis{
-         position: absolute;
-        left: 50%;
-        top: 0%;
-        transform: translate(-50%, 0%);
+        
 
 }
 
